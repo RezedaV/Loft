@@ -10,46 +10,51 @@ body{
 a {
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
 
 /*<div class="header_first">*/
-.table_first{
-    width: 1920px;
-    height: 56px;
-    border-collapse: collapse;
-    border-bottom: 1px solid  #D7D7D7;
+.container {
+    max-width: 1920px;
 }
-.td_first{
-    border-bottom: 1px solid  #D7D7D7;
-    border-right: 1px solid  #D7D7D7;
+
+.header_first{
+    display: flex;
+    border-bottom: 1px solid#D7D7D7;
+
 }
-.td_1{
-    border-right: 1px solid  #D7D7D7;
-    width: 397px;
-}
-.td_2{
+
+.name1{
     width: 394px;
+    border-right: 1px solid  #D7D7D7;
+    margin-left: 397px;
+    border-left:1px solid  #D7D7D7 ;
 }
-.td_3{
+.name2{
     width: 158px;
+    border-right: 1px solid  #D7D7D7;
 }
-.td_4{
+.name3{
     width: 191px;
+    border-right: 1px solid  #D7D7D7;
 }
-.td_5{
+.name4{
     width: 143px;
+    border-right: 1px solid  #D7D7D7;
 }
-.td_6{
+.name5{
     width: 121px;
+    border-right: 1px solid  #D7D7D7;
 }
-.td_7{
+.name6{
     width: 124px;
+    border-right: 1px solid  #D7D7D7;
 }
-.td_8{
-    width: 387px;
-}
+
 
 .name{
-
+    height: 56px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -69,6 +74,7 @@ a {
 }
 
 .menu_header_first{
+    height: 56px;
     text-decoration: none;
     font-family: Open Sans;
     font-style: normal;
@@ -168,16 +174,10 @@ a {
     border-radius: 38px;
 }
 
-/*.button_tel{*/
-/*    width:18px;*/
-/*    height:18px ;*/
-/*}*/
 .button_tel_img{
     margin-top: 11px;
     margin-left: 14px;
 }
-
-
 .text_tel{
     width: 140px;
     height: 40px;
@@ -198,7 +198,10 @@ a {
     border-right: 1px solid #D7D7D7;
     border-left: 1px solid #D7D7D7;
 }
-
+.text_tel:hover{
+    color: #800000;
+    transition: all 0.3s;
+}
 .button_arrow{
     height: 41px;
     width: 35px;
@@ -220,19 +223,9 @@ a {
     margin-top: 28px;
     margin-left: 84px;
 }
-.call2{
-    width: 212px;
-    height: 41px;
-    background: #9F0000;
-    box-shadow: 0px 2px 4px rgba(128, 0, 0, 0.26);
-    border-radius: 34px;
-    margin-top: 28px;
-    margin-left: 33px;
 
-}
-.call:hover,
-.call2:hover{
-    background: grey;
+.call:hover{
+    background: #9F0000;
     transition: all 0.3s;
 }
 
@@ -297,7 +290,7 @@ a {
 
 /*<div class=container">*/
 
-.container{
+.container2{
     height: 691px;
     width: 1920px;
     margin-top: 10px;
@@ -395,14 +388,14 @@ a {
     display: flex;
 }
 
-.Ellipse1,
-.Ellipse2{
+.ellipse1,
+.ellipse2{
     position: absolute;
     width: 40px;
     height: 41px;
     margin-top: 8px;
 }
-.Ellipse2{
+.ellipse2{
     margin-left: 48px;
 }
 
@@ -594,24 +587,16 @@ a {
     height: 41px;
     width: 212px;
     justify-content: center;
-
-
     color: #727272;
 }
 
 .button_promo_white{
     display: flex;
-
     width: 212px;
     height: 41px;
-
-
     border: 1px solid #727272;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.22));
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.22);
     border-radius: 34px;
-
-
 
 }
 
@@ -625,38 +610,6 @@ a {
     margin-left: 10px;
 }
 
-.button_promo_red_text{
-    width: 211px;
-    height: 41px;
-
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    justify-content: center;
-
-    color: #FFFFFF;
-}
-
-.button_promo_red_img{
-    margin-left: 10px;
-}
-
-.button_promo_red{
-    display: flex;
-    width: 212px;
-    height: 41px;
-    background: #800000;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.22);
-    border-radius: 34px;
-    margin-left: 75px;
-    margin-top: 246px;
-}
 
 .promo_2step{
     display: flex;
@@ -810,13 +763,10 @@ a {
 
 .button_promo_grey{
     display: flex;
-
     width: 212px;
     height: 41px;
-
     border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.22));
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.22);
     border-radius: 34px;
 }
 
@@ -894,7 +844,7 @@ a {
 
 
 .product:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: all 0.3s;
 }
@@ -1025,6 +975,56 @@ a {
     color: black;
     outline: none;
 }
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #6D6D6D;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #800000;
+    background-color: #800000;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #800000;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #800000;
+    border-color: #800000;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+    border-color:#6D6D6D;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    background-color:#6D6D6D;
+}
+
 
 .checkbox_text{
     font-family: Roboto;
@@ -1034,12 +1034,22 @@ a {
     line-height: 16px;
     color: #6D6D6D;
     margin-top: 22px;
-    width: 291px;
     height: 31px;
+    display: flex;
 }
 
 .private{
     color: #800000;
+    height: 31px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+    margin-left: 3px;
+
+
 }
 .button_consult_red_text{
     width: 319px;
@@ -1208,6 +1218,10 @@ a {
     margin-left: 395px;
     margin-top: 55px;
 }
+.footer1_name:hover{
+    color: #800000;
+    transition: all 0.2s;
+}
 
 .footer1_block1_text1{
     width: 206px;
@@ -1235,6 +1249,10 @@ a {
     font-size: 14px;
     line-height: 21px;
     color: #C0C2D3;
+}
+.footer1_block1_text2:hover{
+    color: #800000;
+    transition: all 0.2s;
 }
 
 .footer1_block1_text3{
@@ -1405,41 +1423,27 @@ li{
     width: 32px;
     height: 32px;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 34px;
 }
 
 .soc_logoB{
     width: 35px;
     height: 36px;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 34px;
 }
 
 /*конец<div class="footer">*/
 
-.button_promo_red :hover,
-.button_promo_white :hover,
-.button_promo_grey:hover,
+
 .button_consult_red:hover,
-.button_news_red:hover
-{
-    background: #D7D7D7;
+.button_news_red:hover,
+.button_promo_grey:hover,
+.button_promo_white:hover{
+    background:#9F0000;
     transition: all 0.3s;
 }
 
-.button_promo_red :hover,
-.button_promo_white :hover
-{
-    background: #D7D7D7;
-    border-radius: 34px;
-    transition: all 0.3s;
-    width: 212px;
-    height: 41px;
-}
-
-.soc_logo:hover,
-.soc_logoB:hover{
-    background: #800000;
-    transition: all 0.3s;
-}
 .footer1_block2_text1:hover,
 .footer1_block2_text2:hover,
 .footer1_block3_text2:hover,
